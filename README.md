@@ -34,5 +34,10 @@ Ensure you have a web browser to view and test the application.
 
    ```sh
    git clone https://github.com/your-username/mini-search-engine.git
+mini-search-engine/
+│
+├── index.html        # Main HTML file
+├── styles.css        # CSS for styling
+└── script.js         # JavaScript for search functionality
 
 
