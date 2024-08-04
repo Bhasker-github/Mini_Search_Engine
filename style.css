@@ -7,6 +7,7 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Light gray background */
 }
 #Navbar {
     background-color: #000; /* Black */
@@ -34,9 +35,13 @@ body, html {
     border: 1px solid #fff; /* White border */
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* 3D shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 #nav button:hover {
     background-color: #333; /* Dark gray */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
 }
 .container {
     display: flex;
@@ -44,33 +49,69 @@ body, html {
     align-items: center;
     height: 70vh;
     background-color: #f5f5f5; /* Light gray */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 3D shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
 }
 fieldset {
-    padding: 20px;
+    padding: 40px; /* Added padding inside the fieldset */
     border: 2px solid #000; /* Black border */
     border-radius: 10px; /* Rounded corners */
     background-color: #fff; /* White background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 3D shadow */
     margin: 0 auto;
-    max-width: 600px; /* Limit width for better alignment */
+    width: 80%; /* Increased width for better alignment */
+    max-width: 800px; /* Limit width for better alignment */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+fieldset:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
 input {
     font-size: 20px;
     padding: 10px;
-    width: 300px;
-    margin-bottom: 10px;
+    width: 60%; /* Adjusted width for better alignment */
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.2s;
+}
+input:focus {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Added gap between buttons */
 }
 button {
     font-size: 20px;
-    padding: 10px 20px;
-    background-color: #000; /* Black */
+    padding: 10px;
     color: #fff; /* White */
     border: 1px solid #fff; /* White border */
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer;
+    margin: 5px; /* Added margin for better spacing */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* 3D shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button-container button {
+    display: flex; /* Align the icon inside the button */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px; /* Adjusted padding for better spacing */
 }
 button:hover {
     background-color: #333; /* Dark gray */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+}
+button img.icon {
+    width: 30px;
+    height: 30px;
 }
 footer {
     height: 16vh;
@@ -79,6 +120,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3); /* 3D shadow */
 }
 #footer {
     text-align: center;
